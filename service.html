@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>SIEPL</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+         <link rel="icon" type="image/png" href="img/SIEPL LOGO.jpg">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .topbar {
+    background-color: #2c2c2c; /* Or your preferred dark color */
+}
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+<!-- Topbar Start -->
+<div class="topbar-custom">
+    <div class="topbar-left">
+        <a href="#"><i class="fas fa-map-marker-alt"></i> 303, Raheja Archade, Plot No. 61, Sector-11, CBD Belapur, Navi Mumbai – 400614</a>
+    </div>
+    <div class="topbar-right">
+        <a href="#"><i class="fas fa-phone-alt"></i> +91 22 27560010</a>
+        <a href="#"><i class="fas fa-envelope"></i> sales@siepl.co.in</a>
+    </div>
+</div>
+
+<style>
+.topbar-custom {
+    background-color: #001f54; /* dark navy */
+    height: 45px;
+    display: flex;
+    justify-content: space-between; /* left + right alignment */
+    align-items: center;            /* vertical centering */
+    padding: 0 20px;
+}
+.topbar-left a,
+.topbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.topbar-right {
+    display: flex;
+    gap: 30px; /* space between phone and email */
+}
+.topbar-custom i {
+    color: white;
+}
+
+</style>
+<!-- Topbar End -->
+
+
+
+
+
+        <!-- Navbar Start -->
+<div class="container-fluid sticky-top px-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-4">
+        <!-- Brand Logo + Name -->
+        <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
+            <img src="img/SIEPL LOGO.jpg" alt="Spectrum Innovative Engineers Logo" class="me-2" style="height: 40px;">
+            <h2 class="text-secondary fw-bold mb-0" style="font-size: 1.2rem;">
+                Spectrum Innovative Engineers Pvt.Ltd.
+            </h2>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link active">Products & Services</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <a href="Clients & OEM’s.html" class="nav-item nav-link">Clients & OEM’s</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+                <button class="btn btn-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Products & Services</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-secondary">Products & Services</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+       <!-- Services Start -->
+<div class="container-fluid service bg-light py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <p class="text-uppercase text-secondary fs-5 mb-0">Our Products</p>
+            <h2 class="display-4 text-capitalize mb-3">High-performance industrial solutions</h2>
+        </div>
+        <div class="row g-4">
+            <!-- Centrifugal Pump -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/Product photoes/3.1.1CP.png" class="img-fluid w-100" alt="Centrifugal Pump">
+                        
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Centrifugal Pump</a>
+                        <p class="text-white mb-4">
+                            Centrifugal pumps transport fluids by converting rotational kinetic energy into hydrodynamic energy, enabling efficient and continuous fluid flow. Designed to move liquids through a rotating impeller, these pumps deliver consistent flow and pressure, making them ideal for water supply, chemical processing, oil & gas, wastewater treatment, and more.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Centrifugal Pump</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-home text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reciprocating Pump -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/Product photoes/3.1.2RP.jpg"   class="img-fluid w-100" alt="Reciprocating Pump">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Reciprocating Pump</a>
+                        <p class="text-white mb-4">
+                            Reciprocating pumps are positive displacement pumps designed for high-pressure, low-flow applications requiring precision and reliability. Using a piston or plunger mechanism, these pumps deliver a fixed volume of fluid with each stroke, making them ideal for applications where accurate dosing or consistent pressure is essential.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Reciprocating Pump</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-tachometer-alt text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vacuum Pump -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/3.1.3Vp.jpeg" class="img-fluid w-100" alt="Vacuum Pump">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Vacuum Pump</a>
+                        <p class="text-white mb-4">
+                            Designed for demanding applications such as solvent dewaxing, wastewater treatment, and additive/lubricant production. These systems provide efficient solid-liquid separation, continuous operation, and high reliability in critical industrial processes.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Vacuum Pump</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-compress text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centrifugal Compressor -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/Product photoes/3.1.4Cent Compressor.jpg" class="img-fluid w-100" alt="Centrifugal Compressor">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Centrifugal Compressor</a>
+                        <p class="text-white mb-4">
+                            Centrifugal compressors are high-performance machines designed to efficiently compress gases by converting kinetic energy into pressure energy through dynamic rotary action. Ideal for continuous, high-flow applications, they are widely used in industries such as oil & gas, petrochemicals, power generation, and air separation.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Centrifugal Compressor</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-wind text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reciprocating Compressor -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/3.1.5RC.jpeg" class="img-fluid w-100" alt="Reciprocating Compressor">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Reciprocating Compressor</a>
+                        <p class="text-white mb-4">
+                            Reciprocating compressors are positive displacement machines designed to deliver high-pressure gas compression with precision and reliability. Using a piston-driven mechanism, these compressors are ideal for applications requiring continuous compression of air, natural gas, or other industrial gases.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Reciprocating Compressor</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-industry text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screw Compressor -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="1.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/3.1.6SC.jpeg" class="img-fluid w-100" alt="Screw Compressor">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Screw Compressor</a>
+                        <p class="text-white mb-4">
+                            Screw compressors are reliable, energy-efficient solutions for continuous gas and air compression. Utilizing twin intermeshing rotors, screw compressors deliver smooth, pulse-free flow, making them ideal for a wide range of industrial applications.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Screw Compressor</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-cogs text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Liquid Ring Compressor -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="1.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/Product photoes/3.1.7Liquid ring compressor.png" class="img-fluid w-100" alt="Liquid Ring Compressor">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Liquid Ring Compressor</a>
+                        <p class="text-white mb-4">
+                            We offer liquid ring compressors capable of delivering discharge pressures up to 15 bar abs. Engineered for durability and efficiency, these compressors feature low energy consumption, minimal maintenance requirements, and optimal performance in continuous-duty applications.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Liquid Ring Compressor</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-water text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Diesel Generator -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="1.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/Product photoes/3.1.8EDG.jpg" class="img-fluid w-100" alt="Emergency Diesel Generator">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Emergency Diesel Generator</a>
+                        <p class="text-white mb-4">
+                            We offer EDG packages and essential generators in a wide range of capacities, specifically engineered for offshore applications. Our solutions ensure reliable power supply for critical systems, even in the most demanding marine and offshore environments.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Emergency Diesel Generator</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-bolt text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Turbine -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="1.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/Product photoes/3.1.9Turbine.jpg" class="img-fluid w-100" alt="Turbine">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        <a href="#" class="d-block fs-4 my-4">Turbine</a>
+                        <p class="text-white mb-4">
+                            We supply turbine systems with capacities up to 2 MW, designed for efficient and reliable power generation across various industrial applications with compact design, high thermal efficiency and robust performance.
+                        </p>
+                    </div>
+                    <div class="service-tytle d-flex align-items-center ps-4 w-100">
+                        <h4>Turbine</h4>
+                        <div class="btn-xl-square bg-secondary p-4 ms-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-tachometer-alt text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+
+
+      <!-- Services Start -->
+<div class="container-fluid service bg-light pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <p class="text-uppercase text-secondary fs-5 mb-0">Our Services</p>
+            <h2 class="display-4 text-capitalize mb-3">our service is creative, & decent</h2>
+            <h6 class="text-uppercase text-secondary mb-2">Open Market Services</h6>
+            <p>Our Open Market Services are focused on delivering complete support during the early stages of project development, including:</p>
+        </div>
+
+ 
+
+       <div class="row g-4">
+            <!-- Natural Gas Processing Units -->
+             <div class="accordion mt-4" id="accordionNGPU">
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/Services Photoes/3.2.1.1.2 glycol regenration.webp" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        
+                        <a href="service.html" class="d-block fs-4 my-4">Natural Gas Processing Units</a>
+                        <p class="text-white mb-4">We offer a custom design and provide comprehensive natural gas processing solutions designed to meet industry standards and client-specific requirements. Our services cover the full spectrum of gas treatment and conditioning, like GDU, Glycol regeneration etc.</p>
+                    </div>
+                    <div class="service-tytle">
+                        <div class="d-flex align-items-center ps-4 w-100">
+                            <h4>1. Natural Gas Processing Units</h4>
+                        </div>
+                        <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-gas-pump text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+           <!-- Accordion -->
+<div class="accordion" id="accordionNGPU">
+
+  <!-- Sub 1 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" 
+              aria-expanded="false" aria-controls="collapseOne">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.1 Glycol Dehydration Unit (GDU)
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <img src="img/3.2.1.1.1 GDU New.jpeg" 
+             class="img-thumbnail me-3 clickable-image" 
+             style="max-width:120px; cursor:pointer;" 
+             alt="GDU"
+             data-bs-toggle="modal" data-bs-target="#imageModal"
+             data-bs-image="img/3.2.1.1.1 GDU New.jpeg" >
+        <p class="mb-0">
+          Glycol Dehydration Units remove water vapor from natural gas using TEG technology, 
+          ensuring reliable long-term dehydration in harsh environments.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 2 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo" 
+              aria-expanded="false" aria-controls="collapseTwo">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.2 Glycol regeneration
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <img src="img/Services Photoes/3.2.1.1.2 glycol regenration.webp" 
+             class="img-thumbnail me-3 clickable-image" 
+             style="max-width:120px; cursor:pointer;" 
+             alt="Glycol regeneration"
+             data-bs-toggle="modal" data-bs-target="#imageModal"
+             data-bs-image="img/Services Photoes/3.2.1.1.2 glycol regenration.webp">
+        <p class="mb-0">
+         Glycol regeneration systems to strip the absorbed water, salts, and contaminants from the Rich MEG to produce Lean MEG that can be recycled to storage tanks and production wells. Regeneration units help maintain dehydration efficiency, reduce chemical losses, and extend equipment life.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 3 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" 
+              aria-expanded="false" aria-controls="collapseThree">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.3 Molecular (MOL) Sieve Dehydration
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <img src="img/Services Photoes/3.2.1.1.3 Mol seive dehydration.jpg" 
+             class="img-thumbnail me-3 clickable-image" 
+             style="max-width:120px; cursor:pointer;" 
+             alt="MOL Sieve Dehydration"
+             data-bs-toggle="modal" data-bs-target="#imageModal"
+             data-bs-image="img/Services Photoes/3.2.1.1.3 Mol seive dehydration.jpg">
+        <p class="mb-0">
+            Molecular sieve dehydration is the preferred technology over glycol dehydration where very low water dew points are required. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 4 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseFour" 
+              aria-expanded="false" aria-controls="collapseFour">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.4 Gas Sweeting
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <img src="img/Services Photoes/3.2.1.1.4 GSU.webp" 
+             class="img-thumbnail me-3 clickable-image" 
+             style="max-width:120px; cursor:pointer;" 
+             alt="Gas Sweeting"
+             data-bs-toggle="modal" data-bs-target="#imageModal"
+             data-bs-image="img/Services Photoes/3.2.1.1.4 GSU.webp">
+        <p class="mb-0">
+            Gas Sweeting is solutions to remove acid gas components (CO2 and / or H2S) from natural gas.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 5 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseFive" 
+              aria-expanded="false" aria-controls="collapseFive">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.5 Dew Point Control Unit
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <img src="img/Services Photoes/3.2.1.1.5 DPCU.png" 
+             class="img-thumbnail me-3 clickable-image" 
+             style="max-width:120px; cursor:pointer;" 
+             alt="DPCU"
+             data-bs-toggle="modal" data-bs-target="#imageModal"
+             data-bs-image="img/Services Photoes/3.2.1.1.5 DPCU.png">
+        <p class="mb-0">
+            Dew Point Control Units (DPCU) are designed to inhibit the formation of solid hydrates in gas streams
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 6 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseSix" 
+              aria-expanded="false" aria-controls="collapseSix">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.6 Fuel gas treatment and Metering 
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <img src="img/Services Photoes/3.2.1.1.6 Fuel gas metering plant.webp" 
+             class="img-thumbnail me-3 clickable-image" 
+             style="max-width:120px; cursor:pointer;" 
+             alt="Fuel Gas Treatment"
+             data-bs-toggle="modal" data-bs-target="#imageModal"
+             data-bs-image="img/Services Photoes/3.2.1.1.6 Fuel gas metering plant.webp">
+        <p class="mb-0">
+            Fuel Gas Treatment packages are used to provide specific pre-treatment of gas feed streams. FGTP consist of Knock out drums, filter, Heaters, Gas metering / condensate handling, Gas storage system, Emergency shutdown panel.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 7 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseSeven" 
+              aria-expanded="false" aria-controls="collapseSeven">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.7 Separators
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <img src="img/Services Photoes/3.2.1.1.6 seperators.jpg" 
+             class="img-thumbnail me-3 clickable-image" 
+             style="max-width:120px; cursor:pointer;" 
+             alt="Separators"
+             data-bs-toggle="modal" data-bs-target="#imageModal"
+             data-bs-image="img/Services Photoes/3.2.1.1.6 seperators.jpg">
+        <p class="mb-0">
+            Separators are used to separate liquid, gas and water produced from Hydrocarbon wells.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 8 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingEight">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseEight" 
+              aria-expanded="false" aria-controls="collapseEight">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.8 Carbon Capture 
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <img src="img/Services Photoes/3.2.1.1.8Carbon Capture.jpg" 
+             class="img-thumbnail me-3 clickable-image" 
+             style="max-width:120px; cursor:pointer;" 
+             alt="Carbon Capture"
+             data-bs-toggle="modal" data-bs-target="#imageModal"
+             data-bs-image="img/Services Photoes/3.2.1.1.8Carbon Capture.jpg">
+        <p class="mb-0">
+            The technology enables CO2 to be selectively absorbed from flue gas via contact with a regenerable solvent, which is specially design to selectively absorb CO2 from gas streams.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal (Only Once) -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0 shadow-none">
+      <img id="modalImage" src="" class="img-fluid rounded" alt="Preview">
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+  const imageModal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+
+  imageModal.addEventListener('show.bs.modal', function (event) {
+    const trigger = event.relatedTarget; // The clicked image
+    const newSrc = trigger.getAttribute('data-bs-image');
+    modalImage.src = newSrc;
+  });
+</script>
+
+  </div>
+
+            
+            <!-- Effluent/Produced Water Treatment -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/service/3.2.1.2 ETP.jpg" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        
+                        <a href="service.html" class="d-block fs-4 my-4">Effluent/Produced Water Treatment</a>
+                        <p class="text-white mb-4">Water treatment systems are designed to remove oil and other contaminants from produced water or effluent, treating it to meet the required standards for safe disposal or potential reuse.</p>
+                    </div>
+                    <div class="service-tytle">
+                        <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                            <h4>2. Effluent/Produced Water Treatment</h4>
+                        </div>
+                        <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-tint text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                         <!-- Sub 1 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" 
+              aria-expanded="false" aria-controls="collapseOne">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.1 Deoiler hydrocyclones 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionNDeoiler hydrocyclones">
+      <div class="accordion-body d-flex align-items-start">
+        <!--<img src="img/Services Photoes/3.2.1.1.1 GDU.jpg" class="img-thumbnail me-3" style="max-width:120px;" alt="Deoiler hydrocyclones">-->
+        <p class="mb-0">
+          Deoiler hydrocyclones are highly efficient devices used to remove and recover oil from produced water and other process streams, ensuring effective separation and improved water quality.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 2 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo" 
+              aria-expanded="false" aria-controls="collapseTwo">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.2 Gas Floatation
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionNGas Floatation">
+      <div class="accordion-body d-flex align-items-start">
+        <!--<img src="img/Services Photoes/3.2.1.1.2 glycol regenration.webp" class="img-thumbnail me-3" style="max-width:120px;" alt="GDU">-->
+        <p class="mb-0">
+            Gas flotation is a well-established method for oil recovery in water treatment applications, utilizing bubble generation technology and Compact Flotation Units (CFUs) to enhance separation efficiency.
+        </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Sub 3 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" 
+              aria-expanded="false" aria-controls="collapseThree">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.3 Filtration System 
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <!--<img src="img/Services Photoes/3.2.1.1.3 Mol seive dehydration.jpg" class="img-thumbnail me-3" style="max-width:120px;" alt="GDU">-->
+        <p class="mb-0">
+            Filtration systems are widely used for the removal of liquids—such as water and hydrocarbon condensates—from gas streams to ensure product purity, protect downstream equipment, and enhance overall process efficiency.
+        </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Sub 4 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseFour" 
+              aria-expanded="false" aria-controls="collapseFour">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.4 CPI Units 
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <!--<img src="img/Services Photoes/3.2.1.1.4 GSU.webp" class="img-thumbnail me-3" style="max-width:120px;" alt="GDU">-->
+        <p class="mb-0">
+            Corrugated Plate Interceptor (CPI) units are designed to remove free oil and suspended solids from water as a primary stage in the treatment process, using inclined plate packs as the main separation mechanism.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+            <!-- Solid Waste Management -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/service/3.2.1.3 Solid Waste Managment.jpg" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        
+                        <a href="service.html" class="d-block fs-4 my-4">Solid Waste Management</a>
+                        <p class="text-white mb-4">Separator systems are used for the collection, removal, cleaning, and safe disposal of accumulated solids in production facilities, ensuring efficient solid waste management and trouble-free operation.</p>
+                    </div>
+                    <div class="service-tytle">
+                        <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                            <h4>3. Solid Waste Management</h4>
+                        </div>
+                        <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-recycle text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                                     <!-- Sub 1 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" 
+              aria-expanded="false" aria-controls="collapseOne">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.1 Desander Cyclones
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionNDeoiler hydrocyclones">
+      <div class="accordion-body d-flex align-items-start">
+        <!--<img src="img/Services Photoes/3.2.1.1.1 GDU.jpg" class="img-thumbnail me-3" style="max-width:120px;" alt="Deoiler hydrocyclones">-->
+        <p class="mb-0">
+            Separation of sand and solids from produced water, condensate and / or gas streams.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub 2 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo" 
+              aria-expanded="false" aria-controls="collapseTwo">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.2 Wellhead Desander 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionNGas Floatation">
+      <div class="accordion-body d-flex align-items-start">
+        <!--<img src="img/Services Photoes/3.2.1.1.2 glycol regenration.webp" class="img-thumbnail me-3" style="max-width:120px;" alt="GDU">-->
+        <p class="mb-0">
+            Desanders are designed for the efficient separation of sand and solids from produced water, condensate, and gas streams at the wellhead, helping to protect downstream equipment and maintain production reliability.
+        </p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Sub 3 -->
+  <div class="accordion-item mb-2 border-0 shadow-sm">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" 
+              aria-expanded="false" aria-controls="collapseThree">
+        <i class="fas fa-industry me-2 text-secondary"></i> 1.3 Solid Handling  
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionNGPU">
+      <div class="accordion-body d-flex align-items-start">
+        <!--<img src="img/Services Photoes/3.2.1.1.3 Mol seive dehydration.jpg" class="img-thumbnail me-3" style="max-width:120px;" alt="GDU">-->
+        <p class="mb-0">
+            it consists solids collection and removal from the process, Solids handling and cleaning & Solids disposal.
+        </p>
+      </div>
+    </div>
+  </div>
+
+            <!-- Produced Water Conditioning System -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/service/3.2.1.4 PWC.webp" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        
+                        <a href="service.html" class="d-block fs-4 my-4">Produced Water Conditioning System</a>
+                        <p class="text-white mb-4">Produced Water Conditioning System is engineered to efficiently treat and manage water generated during oil and gas production. Designed for onshore and offshore operations, the system removes oil, suspended solids, and other contaminants, ensuring the treated water meets regulatory and reuse standards.</p>
+                    </div>
+                    <div class="service-tytle">
+                        <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                            <h4>4. Produced Water Conditioning System</h4>
+                        </div>
+                        <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-water text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flare Gas Recovery System -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/Services Photoes/3.2.1.5 Flare gas Recovery system.webp" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="service-content text-center p-4">
+                        
+                        <a href="service.html" class="d-block fs-4 my-4">Flare Gas Recovery System</a>
+                        <p class="text-white mb-4">Flare Gas Recovery System is designed to capture and reuse gases that would otherwise be flared, reducing emissions and improving energy efficiency. By recovering valuable hydrocarbons, the system not only helps meet environmental regulations but also enhances operational profitability.</p>
+                    </div>
+                    <div class="service-tytle">
+                        <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                            <h4>5. Flare Gas Recovery System</h4>
+                        </div>
+                        <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-smog text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crude Oil Treatment -->
+            <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="img/service/3.2.1.6 Crude Oil Treatment.jpg" class="img-fluid w-100" alt="Image">
+                    </div>
+                    <div class="service-content text-center p-4">
+                       
+                        <a href="service.html" class="d-block fs-4 my-4">Crude Oil Treatment</a>
+                        <p class="text-white mb-4">Our Crude Oil Treatment systems are designed to efficiently separate unwanted components such as water, salts, solids, and gases from produced crude oil, ensuring it meets export or refinery specifications. These systems play a critical role in improving product quality, protecting downstream equipment, and meeting regulatory standards.</p>
+                    </div>
+                    <div class="service-tytle">
+                        <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                            <h4>6. Crude Oil Treatment</h4>
+                        </div>
+                        <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-oil-can text-primary fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h6 class="text-uppercase text-secondary mb-2">After Market Services</h6>
+            <p>We provide OEM spare parts to support our product and related services. Ensuring optimal performance, reliability, and extended equipment life, our original spare parts are precisely engineered to meet the specifications of your systems.</p>
+        </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+ 
+
+
+        
+
+        <!-- Testimonial Start -->
+        <!--<div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <p class="text-uppercase text-secondary fs-5 mb-0">Testimonials</p>
+                    <h2 class="display-4 text-capitalize mb-3">Our clients reviews.</h2>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="testimonial-item bg-light p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="me-4">
+                                    <img src="img/testimonial-1.jpg" class="img-fluid w-100" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="d-block">
+                                    <h4 class="text-dark">Client Name</h4>
+                                    <p class="m-0 pb-3">Profession</p>
+                                    <div class="d-flex text-secondary pe-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="me-4">
+                                    <img src="img/testimonial-2.jpg" class="img-fluid w-100" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="d-block">
+                                    <h4 class="text-dark">Client Name</h4>
+                                    <p class="m-0 pb-3">Profession</p>
+                                    <div class="d-flex text-secondary pe-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                        <i class="fas fa-star text-muted"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light p-4">
+                        <div class="position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="bottom: 30px; right: 0;"></i>
+                            <div class="mb-4 pb-4 border-bottom border-secondary">
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="me-4">
+                                    <img src="img/testimonial-3.jpg" class="img-fluid w-100" style="width: 100px; height: 100px;" alt="">
+                                </div>
+                                <div class="d-block">
+                                    <h4 class="text-dark">Client Name</h4>
+                                    <p class="m-0 pb-3">Profession</p>
+                                    <div class="d-flex text-secondary pe-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- Testimonial End -->
+
+                <!-- Footer Start -->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-4 col-xl-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Explore</h4>
+                    <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Products & Services</a>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                    <a href="project.html"><i class="fas fa-angle-right me-2"></i> Latest Projects</a>
+                    <a href="Clients & OEM’s.html"><i class="fas fa-angle-right me-2"></i> Clients & OEM’s</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Our Services</h4>
+                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Natural Gas Processing Units </a>
+                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Effluent/ produced Water Treatment </a>
+                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Solid Waste Management </a>
+                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Produced Water Conditioning System </a>
+                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Flare Gas Recovery System</a>
+                    <a href="service.html"><i class="fas fa-angle-right me-2"></i> Crude Oil Treatment</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Contact Info</h4>
+                    <a href=""><i class="fa fa-map-marker-alt me-2"></i> 303, Raheja Archade, Plot No. 61, Sector-11, CBD Belapur, Navi Mumbai – 400614</a>
+                    <a href=""><i class="fas fa-envelope me-2"></i> info@siepl.co.in</a>
+                    <a href=""><i class="fas fa-envelope me-2"></i> sales@siepl.co.in</a>
+                    <a href=""><i class="fas fa-phone me-2"></i> +91 22 27560010</a>
+                    <a href="" class="mb-3"><i class="fas fa-print me-2"></i>+91 22 27560011</a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>SIEPL</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="http://www.technoriya.com/">Technoriya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
